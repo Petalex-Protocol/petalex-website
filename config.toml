@@ -1,0 +1,17 @@
+baseURL = "https://www.petalex.com/"
+languageCode = "en-us"
+title = "Petalex"
+
+theme = "dark"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.en]
+    title = "Petalex"
+    languageName = "English"
+    weight = 1
