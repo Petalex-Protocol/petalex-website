@@ -7,7 +7,7 @@
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
-    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/petalex_favicon.png" />
+    <link rel="icon" type="image/png" href="/images/petalex_favicon.png" />
     {{ $styles := resources.Get "css/styles.scss"
         | toCSS
         | postCSS (dict "config" "./assets/css/postcss.config.js")
@@ -29,6 +29,6 @@
       {{ end }}      
     </div>
     {{ partial "footer.html" . }}
-    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

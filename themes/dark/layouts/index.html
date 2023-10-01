@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
-      <img src="{{ .Site.BaseURL }}/images/petalex-plant.png" class="max-w-xl rounded-lg" />
+      <img src="/images/petalex-plant.png" class="max-w-xl rounded-lg" />
       <div>
         <h1 class="text-8xl font-bold">Petalex</h1>
         <h2 class="py-6 text-4xl">Let's grow something</h2>
@@ -19,13 +19,13 @@
         <h1 class="text-4xl font-bold text-dark">NFT Wrapped DSProxy</h1>
         <h2 class="py-6 text-2xl text-dark">Execute batched transactions safely to a proxy address wrapped inside a transferable NFT. Grow complex strategies for yourself or others easily!</h2>
       </div>
-      <img src="{{ .Site.BaseURL }}/images/petalex-box.png" class="max-w-xl rounded-lg gap-x-4" />
+      <img src="/images/petalex-box.png" class="max-w-xl rounded-lg gap-x-4" />
     </div>
   </div>
 
   <div class="hero bg-light pb-10">
     <div class="hero-content flex-col lg:flex-row p-4 m-4">
-      <img src="{{ .Site.BaseURL }}/images/petalex-oss.png" class="max-w-xl rounded-lg gap-x-4" />
+      <img src="/images/petalex-oss.png" class="max-w-xl rounded-lg gap-x-4" />
       <div>
         <h1 class="text-4xl font-bold text-dark">Community Owned</h1>
         <h2 class="py-6 text-2xl text-dark">Experience true decentralisation and open source software by contributing with more integrations to share generated revenue!</h2>
@@ -35,21 +35,21 @@
 
 
   <div class="container mx-auto p-10 my-4">
-    <h2 class="mb-4 flex items-center gap-2 text-4xl"><img src="{{ .Site.BaseURL }}/images/comment-text.png" />Latest Updates</h2>
+    <h2 class="mb-4 flex items-center gap-2 text-4xl"><img src="/images/comment-text.png" />Latest Updates</h2>
     <div class="flex my-8 gap-4">
       {{ range first 3 .Site.RegularPages }}
         <a href="{{.Permalink}}">
           <div class="rounded-lg border-solid border-2 border-primary p-8 post">
             <h2 class="text-2xl mb-4">{{.Title}}</h2>
             <div class="flex items-center gap-2">
-              <img class="icon date" src="{{ .Site.BaseURL }}/images/calendar-month.png" />{{.Date.Format "Monday, 2 January 2006"}}
+              <img class="icon date" src="/images/calendar-month.png" />{{.Date.Format "Monday, 2 January 2006"}}
             </div>
           </div>
         </a>
       {{ end }}
     </div>
     <div class="text-xl">
-      <a href="{{ .Site.BaseURL }}/posts"><h3>Read More</h3></a>
+      <a href="/posts"><h3>Read More</h3></a>
     </div>
   </div>
 {{ end }}
