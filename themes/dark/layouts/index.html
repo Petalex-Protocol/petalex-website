@@ -36,7 +36,7 @@
 
   <div class="container mx-auto p-10 my-4">
     <h2 class="mb-4 flex items-center gap-2 text-4xl"><img src="{{ .Site.BaseURL }}/images/comment-text.png" />Latest Updates</h2>
-    <div class="flex my-8">
+    <div class="flex my-8 gap-4">
       {{ range first 3 .Site.RegularPages }}
         <a href="{{.Permalink}}">
           <div class="rounded-lg border-solid border-2 border-primary p-8 post">

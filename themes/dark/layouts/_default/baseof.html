@@ -8,11 +8,10 @@
       {{ .Site.Title }}
     {{ end }}</title>
     <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/petalex_favicon.png" />
-    {{ $time := now }}
     {{ $styles := resources.Get "css/styles.scss"
         | toCSS
         | postCSS (dict "config" "./assets/css/postcss.config.js")
-        | resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
+        | resources.ExecuteAsTemplate "styles.css" .
     }}
 
     {{ if .Site.IsServer }}
